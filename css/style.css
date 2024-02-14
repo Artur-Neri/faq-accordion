@@ -25,10 +25,14 @@ ul {
 
 body {
   background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-size: cover;
+  min-height: 30vh;
   position: relative;
 
+  display: flex;
+  align-items: center;
+
   font-family: var(--font-main);
-  min-height: 100vh;
 }
 
 .hide {
@@ -82,6 +86,7 @@ body {
   font-weight: var(--font-semi-bold);
 
   cursor: pointer;
+  user-select: none;
 }
 
 .accordion__question {
