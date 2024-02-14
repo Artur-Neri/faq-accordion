@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-pink: hsl(275, 100%, 97%);
+  --color-purple: hsl(292, 16%, 49%);
+  --color-dark-purple: hsl(292, 42%, 14%);
+
+  --font-normal: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --font-main: "Work Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  position: relative;
+
+  font-family: var(--font-main);
+}
+
+.card {
+  position: absolute;
+
+  border-radius: 1rem;
+
+  margin: 24px;
+  padding: 0 40px;
+  max-width: 600px;
+
+  background-color: var(--color-white);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin: 50px 0;
+}
+
+.header img {
+  width: 36px;
+}
+
+.header__title {
+  font-size: 36px;
+  font-weight: var(--font-bold);
+
+  color: var(--color-dark-purple);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding-bottom: 24px;
+
+  font-weight: var(--font-semi-bold);
+}
+
+.accordion__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-pink);
+}
+
+.accordion__icon {
+  width: 24px;
+}
