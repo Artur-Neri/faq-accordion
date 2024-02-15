@@ -24,15 +24,30 @@ ul {
 }
 
 body {
-  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
-  background-size: cover;
-  min-height: 30vh;
   position: relative;
 
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
 
   font-family: var(--font-main);
+
+  background-color: var(--color-pink);
+}
+
+.bgIllustration {
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-size: cover;
+  min-height: 30vh;
+  height: 45vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hide {
@@ -40,12 +55,11 @@ body {
 }
 
 .card {
-  position: absolute;
-
   border-radius: 1rem;
+  box-shadow: 0px 8px 16px 10px hsla(292, 42%, 14%, 0.08);
 
   margin: 24px;
-  padding: 0 40px;
+  padding: 0 40px 16px 40px;
   max-width: 600px;
 
   background-color: var(--color-white);
@@ -56,7 +70,7 @@ body {
   align-items: center;
   gap: 30px;
 
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .header img {
