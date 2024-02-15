@@ -38,7 +38,7 @@ body {
 }
 
 .bgIllustration {
-  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background: url("../assets/images/background-pattern-desktop.svg") no-repeat;
   background-size: cover;
   min-height: 30vh;
   height: 45vh;
